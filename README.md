@@ -1,4 +1,4 @@
-# Modern Azure Data Architecture Pipeline
+# Modern Azure ETL Data Processing Pipeline
 
 A complete end-to-end data pipeline demonstrating CSV ingestion, transformation, and visualization using Azure services.
 
@@ -69,7 +69,7 @@ Follow `portal/pipelineconfig.md`:
 - Create Databricks cluster & notebook
 - Build Power BI dashboard
 
-## Technologies Used
+## 📍 Technologies Used
 
 - **Terraform**: Infrastructure provisioning
 - **Azure Data Lake Gen2**: Data storage (ADLS)
@@ -86,12 +86,3 @@ Follow `portal/pipelineconfig.md`:
 2. **Transform:** Remove nulls, aggregate by product
 3. **Clean Data:** `processed/sales_clean/`
 4. **Visualize:** Dashboard showing sales trends
-
-## What Each Component Does
-
-| Component | Responsibility |
-|-----------|-----------------|
-| **Terraform** | Automated resource creation (IaC) |
-| **Cloud Shell** | Run deployment scripts |
-| **Portal UI** | Manual pipeline & dashboard setup |
-| **Databricks** | Data processing with Spark |
