@@ -1,7 +1,6 @@
-# Update these values with your actual configuration
 resource_group_name   = "rg-data-pipeline-dev"
 location              = "eastus"
-storage_account_name  = "stgdatalakeprod123" # Must be globally unique
+storage_account_name  = "stgdatalake6437prod123"
 adf_name              = "adf-sales-pipeline"
 databricks_name       = "dbks-sales-workspace"
 
