@@ -43,14 +43,7 @@ CSV File → Azure Data Lake Gen2 → Azure Data Factory → Databricks → Powe
 │   ├── provider.tf
 │   ├── main.tf
 │   ├── variables.tf
-│   ├── outputs.tf
-│   └── terraform.tfvars
-├── cloudshell/         # Deployment scripts
-│   └── deploy.sh
-├── portal/             # Manual setup guide
-│   └── pipelineconfig.md
-└── README.md
-```
+│   
 
 ## 📍 Deployment Guide
 
