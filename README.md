@@ -36,15 +36,6 @@ CSV File → Azure Data Lake Gen2 → Azure Data Factory → Databricks → Powe
 - Processed data repository
 - Single source of truth
 
-## 📍Project Structure
-
-```
-├── terraform/          # IaC - Creates cloud infrastructure
-│   ├── provider.tf
-│   ├── main.tf
-│   ├── variables.tf
-│   
-
 ## 📍 Deployment Guide
 
 ### Phase 1: Infrastructure as Code (Terraform)
