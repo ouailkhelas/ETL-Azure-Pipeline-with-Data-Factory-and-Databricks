@@ -35,7 +35,6 @@
 
 ### Create Notebook
 ```python
-# Sales Data Transformation
 df = spark.read.csv("abfss://datalake@{storageaccount}.dfs.core.windows.net/raw/sales.csv", header=True)
 df_clean = df.dropna()
 df_processed = df_clean.groupBy("product").sum("amount")
@@ -50,10 +49,3 @@ df_processed.write.mode("overwrite").csv("abfss://datalake@{storageaccount}.dfs.
    - Total Revenue (card)
    - Daily Trend (line chart)
 4. Publish to Power BI Service
-
-## Important Notes
-- ADF orchestrates but does NOT send data to Databricks
-- Databricks reads directly from Data Lake using Spark
-- Databricks writes results back to Data Lake
-- Power BI connects to processed data in Data Lake
-- ADF triggers Databricks notebook execution only
